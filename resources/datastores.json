@@ -1,0 +1,19 @@
+[{
+    "_id": "datastore_1",
+    "datastore_name": "datastore_1",
+    "capacityMB": 5000,
+    "freeSpaceMB": 1000
+  },
+    {
+    "_id": "datastore_2",
+    "datastore_name": "datastore_2",
+    "capacityMB": 6000,
+    "freeSpaceMB": 500
+  },
+    {
+    "_id": "datastore_3",
+    "datastore_name": "datastore_3",
+    "capacityMB": 20000,
+    "freeSpaceMB": 10000
+  }
+ ]

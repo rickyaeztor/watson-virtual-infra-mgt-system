@@ -1,106 +1,26 @@
-{
-  "subject": "Esx Hosts",
-  "columns": [
-    {
-      "key": "memory_utilization",
-      "type": "numeric",
-      "goal": "min",
-      "is_objective": true,
-      "full_name": "Memory_Utilization",
-      "range": {
-        "low": 50,
-        "high": 90
-      },
-      "format": "number:0"
-    },
-    {
-      "key": "cpu_utilization",
-      "type": "numeric",
-      "goal": "min",
-      "is_objective": true,
-      "full_name": "Cpu_Utilization",
-      "range": {
-        "low": 50,
-        "high": 90
-      },
-      "format": "number:0"
-    },
-    {
-      "key": "disk_utilization",
-      "type": "numeric",
-      "goal": "min",
-      "is_objective": true,
-      "full_name": "Disk_Utilization",
-      "range": {
-        "low": 50,
-        "high": 90
-      },
-      "format": "number:0"
-    },
-    {
-      "key": "network_utilization",
-      "type": "numeric",
-      "goal": "min",
-      "is_objective": true,
-      "full_name": "Network_Utilization",
-      "range": {
-        "low": 50,
-        "high": 90
-      },
-      "format": "number:0"
-    },
-    {
-      "key": "updated_date",
-      "type": "datetime",
-      "goal": "max",
-      "full_name": "Updated_Date",
-      "format": "date: 'MMM dd, yyyy'"
-    }
-  ],
-  "options": [
-    {
-      "key": "1",
-      "name": "esxhost1",
-      "values": {
-        "network_utilization": 80,
-        "disk_utilization": 70,
-        "cpu_utilization": 90,
-        "memory_utilization": 70,
-        "updated_date":  "2013-04-29T00:00:00Z"
-      }
-    },
-    {
-      "key": "2",
-      "name": "esxhost2",
-      "values": {
-        "network_utilization": 80,
-        "disk_utilization": 70,
-        "cpu_utilization": 90,
-        "memory_utilization": 70,
-        "updated_date":  "2013-04-29T00:00:00Z"
-      }
-    },
-    {
-      "key": "3",
-      "name": "esxhost3",
-      "values": {
-        "network_utilization": 80,
-        "disk_utilization": 70,
-        "cpu_utilization": 90,
-        "memory_utilization": 70,
-        "updated_date":  "2013-04-29T00:00:00Z"
-      }
-    },
-    {
-      "key": "4",
-      "name": "esxhost4",
-      "values": {
-        "network_utilization": 80,
-        "disk_utilization": 70,
-        "cpu_utilization": 90,
-        "memory_utilization": 70,
-        "updated_date":  "2013-04-29T00:00:00Z"
-      }
-    }
-  ]
-}
+[ {
+  "_id": "esxhost1",
+  "hostname": "esxhost1",
+  "cpu_utilization": 60,
+  "memory_utilization": 80,
+  "network_utilization": "high",
+  "disk_utilization": 70
+},
+  {
+  "_id": "esxhost2",
+  "hostname": "esxhost2",
+  "cpu_utilization": 70,
+  "memory_utilization": 90,
+  "network_utilization": "low",
+  "disk_utilization": 80
+},
+   {
+  "_id": "esxhost3",
+  "hostname": "esxhost3",
+  "cpu_utilization": 68,
+  "memory_utilization": 80,
+  "network_utilization": "med",
+  "disk_utilization": 78
+} ]
+
+

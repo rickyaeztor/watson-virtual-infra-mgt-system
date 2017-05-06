@@ -1,0 +1,28 @@
+[ {
+  "_id": "cluster1",
+  "cluster_name": "cluster1",
+  "totalCpuCapacityMhz": 54000,
+  "clusLoadDeviation": 0.02,
+  "totalMemCapacityMB": 50000,
+  "memDemandMhz": 26000,
+  "cpuDemandMhz": 36000
+},
+  {
+  "_id": "cluster2",
+  "totalCpuCapacityMhz": 30000,
+  "memDemandMhz": 26000,
+  "totalMemCapacityMB": 15000,
+  "cluster_name": "cluster2",
+  "cpuDemandMhz": 36000,
+  "clusLoadDeviation": 0.02
+},
+  {
+  "_id": "cluster3",
+  "_rev": "1-d079922f7d57fb3cebccf38a603176da",
+  "cluster_name": "cluster3",
+  "memDemandMhz": 26000,
+  "clusLoadDeviation": 0.02,
+  "totalCpuCapacityMhz": 33000,
+  "totalMemCapacityMB": 41000,
+  "cpuDemandMhz": 36000
+} ]

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %} Watson for VHS {% endblock %}
+
+{% block content %}
+<article>
+    <header>
+        <h2>Watson Predictive Analytics & Management System for Virtual Infrastracture</h2>
+        <h3>Select VCenter:</h3>
+    </header>
+    <section>
+       <form name="vcenter" action="{{ url_for('vcenter_analyze_task') }}" method="GET">
+          <select name="vcenter">
+             {% for vc in vcenters %}
+                  <option value="vc"  >  {{ vc }}  </option>
+             {% endfor %}
+          </select>
+          <input type="submit"/>
+       </form>
+
+    </section>
+
+    <br>
+
+</article>
+
+<aside>
+    <h3> How the Application works? </h3>
+    <p> This application only demonstrates and simulates one of the set of features of the Real-World Application.</p>
+    <p> Once you select a VCenter Name from the drop down menu, the application retrieves all object (Cluster, ESX, Datastore) data collections.
+        The data collections are then pass on to WATSON TRADEOFF ANALYTICS for analysis to come up with the preffered option on where a Virtual Machine
+        can be created based from the json "defined" problem statement.
+    </p>
+
+    <p> <b>Note:</b> <br> <i> Due to time constraints during the codefest and since a true VSphere Infrastracture is not available for this demo, the actual objects are just being retrived from Cloudant database.
+        In real-world application - the objects are retrieved from each Vcenter via batch job which is also being saved to database for faster transation and query
+        (since logging in and looping through each Vcenter has considerable amount of lag time)</i>i
+    </p>
+</aside>
+
+{% endblock %}

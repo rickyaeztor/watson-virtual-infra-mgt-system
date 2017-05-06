@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %} Watson for VHS {% endblock %}
+
+{% block content %}
+<article>
+
+    <header>
+        <h2>Watson Predictive Analytics & Management System for Virtual Infrastracture</h2>
+    </header>
+
+    <section>
+      <table class=table border=1 cellpadding=20>
+
+                   <tr>
+                      <th> Preferred Cluster </th>
+                       <td>
+                           {% for key, value in cls_items.items() %}
+                                  <ul style="list-style-type:square">
+                                  <li> {{ key }}  : {{ value }}</li>
+                                  </ul>
+                           {% endfor %}
+                        </td>
+                    </tr>
+      </table>
+    </section>
+    <br>
+    <section>
+              <table class=table border=1 cellpadding=20>
+
+                   <tr>
+                      <th> Preferred Esx Host </th>
+                       <td>
+                           {% for key, value in esx_items.items() %}
+                                  <ul style="list-style-type:square">
+                                  <li> {{ key }}  : {{ value }}</li>
+                                  </ul>
+                           {% endfor %}
+                        </td>
+                    </tr>
+      </table>
+    </section>
+    <br>
+    <section>
+              <table class=table border=1 cellpadding=20>
+
+                   <tr>
+                      <th> Preferred Datastore </th>
+                       <td>
+                           {% for key, value in ds_items.items() %}
+                                  <ul style="list-style-type:square">
+                                  <li> {{ key }}  : {{ value }}</li>
+                                  </ul>
+                           {% endfor %}
+                        </td>
+                    </tr>
+      </table>
+    </section>
+
+</article>
+
+<aside>
+    <h3> What's all about with the result? </h3>
+    <p> The outcome is based from WATSON's calculation - The objects from each tables suggests
+        the best option on where to create or place the new Virtual Machine. </p>
+
+    <p> Try playing with different data by accessing
+        <a href="https://85503c60-2116-40ba-afba-2fac974fd814-bluemix.cloudant.com/dashboard.html"> Cloundat DB Management Console. </a>
+        Use the password = "d3af0265b2427f7fff9fa3f011291bc498dcc3fc1bb7cf9be3bc95d8041460c1" to login.
+    </p>
+    <p>
+        <b>Note:</b><br> <i> Make sure to input valid data only - since the exception handling is not fully configured as of this moment due time constraint during the codefest </i>
+    </p>
+</aside>
+
+{% endblock %}
